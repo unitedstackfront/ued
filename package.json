@@ -4,6 +4,7 @@
         "flightjs": "~1.5.0",
         "jquery": "^2.1.0",
         "requirejs": "^2.1.15",
-        "requirejs-text": "^2.0.12"
+        "requirejs-text": "^2.0.12",
+        "normalize.css": "^3.0.0"
     }
 }
