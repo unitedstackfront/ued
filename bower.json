@@ -5,6 +5,7 @@
     "jquery": "2.x.x",
     "flight": "1.x.x",
     "requirejs": "~2.1.5",
+    "requirejs-text": "^2.0.0",
     "normalize-css": "3.x.x"
   },
   "devDependencies": {
