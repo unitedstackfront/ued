@@ -6,7 +6,7 @@ define(function (require) {
    * Module dependencies
    */
 
-  // var MyComponent = require('component/my_component');
+  var MyComponent = require('component/posts');
 
   /**
    * Module exports
