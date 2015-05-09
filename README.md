@@ -1,5 +1,7 @@
 # flight-UnitedStack_UED
 
+[![Build Status](https://travis-ci.org/unitedstackfront/ued.svg?branch=develop)](https://travis-ci.org/unitedstackfront/ued)
+
 ## Installation
 
 ```
