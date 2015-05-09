@@ -2,7 +2,11 @@ language: node_js
 node_js:
   - "0.10"
 
+env:
+  - CHROME_BIN=/opt/google/chrome/chrome
+
 before_script:
-  - npm install
   - npm install -g bower
   - bower install --allow-root
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
