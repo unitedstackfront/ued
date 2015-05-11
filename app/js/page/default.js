@@ -1,4 +1,4 @@
-define(['component/posts', function (Posts) {
+define(['component/posts'], function(Posts) {
 
   'use strict';
 

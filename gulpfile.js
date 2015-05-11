@@ -21,7 +21,7 @@ gulp.task('js', function () {
 
 gulp.task('default', function () {
   gulp.run('livereload-server');
-
+  
   gulp.watch('app/**/*.css', function (event) {
     gulp.run('css');
   });

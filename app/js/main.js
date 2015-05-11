@@ -3,8 +3,11 @@
 requirejs.config({
   baseUrl: './bower_components',
   paths: {
-    'component': '../js/component',
-    'page': '../js/page'
+    "component": "../js/component",
+    "page": "../js/page",
+    "react": "react/react",
+    "JSXTransformer": "react/JSXTransformer",
+    "jsx": "react/jsx"
   }
 });
 
