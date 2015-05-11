@@ -5,9 +5,15 @@ requirejs.config({
   paths: {
     "component": "../js/component",
     "page": "../js/page",
-    "react": "react/react",
+    "react": "react/react-with-addons.min",
     "JSXTransformer": "react/JSXTransformer",
-    "jsx": "react/jsx"
+    "text": "requirejs-text/text",
+    "jsx": "jsx-requirejs-plugin/js/jsx"
+  },
+  jsx: {
+    "fileExtension": ".jsx",
+    "harmony": true,
+    "stripTypes": true
   }
 });
 

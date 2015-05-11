@@ -1,11 +1,6 @@
-define(function(require) {
+define(['flight/lib/component', 'jsx!component/posts/template'], function(defineComponent, Template) {
 
   'use strict';
-
-  /**
-   * Module dependencies
-   */
-  var defineComponent = require('flight/lib/component');
 
   /**
    * Module exports
@@ -23,7 +18,7 @@ define(function(require) {
     });
 
     this.after('initialize', function() {
-
+      Template.render(this.$node.get(0));
     });
   }
 
