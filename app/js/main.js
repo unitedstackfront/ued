@@ -1,7 +1,7 @@
 'use strict';
 
 requirejs.config({
-  baseUrl: './app/bower_components',
+  baseUrl: './bower_components',
   paths: {
     'component': '../js/component',
     'page': '../js/page'
