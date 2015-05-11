@@ -1,12 +1,6 @@
-define(function (require) {
+define(['component/posts', function (Posts) {
 
   'use strict';
-
-  /**
-   * Module dependencies
-   */
-
-  var MyComponent = require('component/posts');
 
   /**
    * Module exports
@@ -19,7 +13,7 @@ define(function (require) {
    */
 
   function initialize() {
-    // MyComponent.attachTo(document);
+    Posts.attachTo('#pagePost');
   }
 
 });

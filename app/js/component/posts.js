@@ -5,9 +5,7 @@ define(function(require) {
   /**
    * Module dependencies
    */
-  console.log('before load');
   var defineComponent = require('flight/lib/component');
-  console.log('after load');
 
   /**
    * Module exports
