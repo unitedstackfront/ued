@@ -4,3 +4,4 @@ wordpress
 bower_components
 app/lib
 server.log
+npm-debug.log

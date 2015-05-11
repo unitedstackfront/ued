@@ -16,13 +16,17 @@ module.exports = function (config) {
     ],
     files: [
       // loaded without require
-      'app/bower_components/jquery/dist/jquery.js',
-      'app/bower_components/jasmine-jquery/lib/jasmine-jquery.js',
-      'app/bower_components/jasmine-flight/lib/jasmine-flight.js',
+      'app/lib/jquery/dist/jquery.js',
+      'app/lib/jasmine-jquery/lib/jasmine-jquery.js',
+      'app/lib/jasmine-flight/lib/jasmine-flight.js',
+      // 'app/lib/jsx-requirejs-plugin/js/jsx.js',
+      // 'app/lib/react/JSXTransformer.js',
+      // 'app/lib/requirejs-text/text.js',
       // loaded with require
-      {pattern: 'app/bower_components/flight/**/*.js', included: false},
+      {pattern: 'app/lib/**/*.js', included: false},
       {pattern: 'app/js/**/*.js', included: false},
       {pattern: 'test/spec/**/*.spec.js', included: false},
+      {pattern: 'app/js/**/*.jsx', watched: false, included: false, served: true},
       // test config
       'test/test-main.js'
     ],

@@ -1,6 +1,6 @@
 'use strict';
 
-describeComponent('component/posts', function () {
+describeComponent('component/posts/posts', function () {
 
   // Initialize the component and attach it to the DOM
   beforeEach(function () {
@@ -11,6 +11,5 @@ describeComponent('component/posts', function () {
     expect(this.component).toBeDefined();
   });
 
-  it('should do something');
 
 });
