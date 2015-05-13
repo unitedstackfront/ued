@@ -1,2 +1,7 @@
 node_modules
 wordpress
+.DS_Store
+bower_components
+app/lib
+server.log
+npm-debug.log
