@@ -6,16 +6,18 @@ var tests = Object.keys(window.__karma__.files).filter(function (file) {
 
 requirejs.config({
   // Karma serves files from '/base'
-  baseUrl: '/base/app',
+  baseUrl: '/base/app/lib',
 
   paths: {
-    "component": "js/component",
-    "page": "js/page",
-    "react": "lib/react/react-with-addons.min",
-    "JSXTransformer": "lib/react/JSXTransformer",
-    "text": "lib/requirejs-text/text",
-    "jsx": "lib/jsx-requirejs-plugin/js/jsx",
-    "flight": "lib/flight"
+    "component": "../js/component",
+    "template": "../js/templates",
+    "page": "../js/page",
+    "mixin": "../js/mixin",
+    "service": "../js/service",
+    "react": "react/react-with-addons.min",
+    "JSXTransformer": "react/JSXTransformer",
+    "text": "requirejs-text/text",
+    "jsx": "jsx-requirejs-plugin/js/jsx"
   },
   jsx: {
     "fileExtension": ".jsx",

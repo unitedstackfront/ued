@@ -6,6 +6,7 @@ define([], function() {
     return Base;
 
     function Base() {
+
         this.onInitialize = function() {
 
             this.on(document, 'viewChange', this.onViewChange);
