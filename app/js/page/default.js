@@ -1,8 +1,9 @@
 define([
     'component/posts/posts',
     'component/post/post',
-    'service/wpservice'
-], function(Posts, Post, WPService) {
+    'service/wpservice',
+    'service/router'
+], function(Posts, Post, WPService, RouterService) {
 
     'use strict';
     /**
@@ -19,6 +20,7 @@ define([
         Posts.attachTo('#pagePost');
         Post.attachTo('#pagePostSingle');
         WPService.attachTo(document);
+        RouterService.attachTo(document);
     }
 
 });

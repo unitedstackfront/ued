@@ -11,12 +11,18 @@ requirejs.config({
     "react": "react/react-with-addons.min",
     "JSXTransformer": "react/JSXTransformer",
     "text": "requirejs-text/text",
-    "jsx": "jsx-requirejs-plugin/js/jsx"
+    "jsx": "jsx-requirejs-plugin/js/jsx",
+    "director": "router/build/director.min"
   },
   jsx: {
     "fileExtension": ".jsx",
     "harmony": true,
     "stripTypes": true
+  },
+  shim: {
+    "director": {
+      "exports": "Router"
+    }
   }
 });
 

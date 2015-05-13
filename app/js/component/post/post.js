@@ -32,7 +32,7 @@ define(['flight/lib/component', 'mixin/base', 'jsx!component/post/template'], fu
 
             this.onInitialize();
 
-            this.on(document, 'showPost', this.doShowPost);
+            this.on(document, 'service.postFetched', this.doShowPost);
         });
     }
 
