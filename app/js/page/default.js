@@ -1,19 +1,24 @@
-define(['component/posts/posts'], function(Posts) {
+define([
+    'component/posts/posts',
+    'component/post/post',
+    'service/wpservice'
+], function(Posts, Post, WPService) {
 
-  'use strict';
+    'use strict';
+    /**
+     * Module exports
+     */
 
-  /**
-   * Module exports
-   */
+    return initialize;
 
-  return initialize;
+    /**
+     * Module function
+     */
 
-  /**
-   * Module function
-   */
-
-  function initialize() {
-    Posts.attachTo('#pagePost');
-  }
+    function initialize() {
+        Posts.attachTo('#pagePost');
+        Post.attachTo('#pagePostSingle');
+        WPService.attachTo(document);
+    }
 
 });

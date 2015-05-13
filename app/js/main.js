@@ -4,7 +4,10 @@ requirejs.config({
   baseUrl: './lib',
   paths: {
     "component": "../js/component",
+    "template": "../js/templates",
     "page": "../js/page",
+    "mixin": "../js/mixin",
+    "service": "../js/service",
     "react": "react/react-with-addons.min",
     "JSXTransformer": "react/JSXTransformer",
     "text": "requirejs-text/text",
