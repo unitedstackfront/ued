@@ -8,7 +8,7 @@
     "requirejs-text": "^2.0.0",
     "normalize-css": "3.x.x",
     "jsx-requirejs-plugin": "^0.6.0",
-    "router": "git@github.com:flatiron/director.git"
+    "router": "https://github.com/flatiron/director.git"
   },
   "devDependencies": {
     "jasmine-flight": "3.x.x"
