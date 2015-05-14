@@ -11,10 +11,15 @@ define([
                 "id": id
             });
         };
+        this.gotoPosts = function(id) {
+            this.trigger(document, 'service.fetchPosts');
+        };
 
         this.after('initialize', function() {
             this.routers = {
-                '/post/:id': this.gotoPost.bind(this)
+                '/post/:id': this.gotoPost.bind(this),
+                '/posts': this.gotoPosts.bind(this),
+                '/': this.gotoPosts.bind(this)
             };
 
             this.router = Router(this.routers);

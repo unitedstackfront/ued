@@ -11,6 +11,7 @@ module.exports = function (config) {
     basePath: '',
     browsers: [process.env.TRAVIS ? 'Firefox' : 'Chrome'],
     captureTimeout: 5000,
+    // list of files to exclude
     exclude: [
       'app/js/main.js'
     ],
@@ -19,14 +20,11 @@ module.exports = function (config) {
       'app/lib/jquery/dist/jquery.js',
       'app/lib/jasmine-jquery/lib/jasmine-jquery.js',
       'app/lib/jasmine-flight/lib/jasmine-flight.js',
-      // 'app/lib/jsx-requirejs-plugin/js/jsx.js',
-      // 'app/lib/react/JSXTransformer.js',
-      // 'app/lib/requirejs-text/text.js',
       // loaded with require
-      {pattern: 'app/lib/**/*.js', included: false},
-      {pattern: 'app/js/**/*.js', included: false},
-      {pattern: 'test/spec/**/*.spec.js', included: false},
-      {pattern: 'app/js/**/*.jsx', watched: false, included: false, served: true},
+      { pattern: 'app/lib/**/*.js', included: false },
+      { pattern: 'app/js/**/*.js', included: false },
+      { pattern: 'test/spec/**/*.spec.js', included: false },
+      { pattern: 'app/js/**/*.jsx', watched: false, included: false, served: true },
       // test config
       'test/test-main.js'
     ],
