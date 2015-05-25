@@ -3,9 +3,9 @@ define(['react'], function(React) {
 
         render: function() {
             function createMarkup() { return {__html: this.props.data.content}; };
-            return <div class="post">
-                        <div class="post-title">{this.props.data.title}</div>
-                        <div class="post-content" dangerouslySetInnerHTML={createMarkup.apply(this)}></div>
+            return <div className="post">
+                        <div className="post-title">{this.props.data.title}</div>
+                        <div className="post-content" dangerouslySetInnerHTML={createMarkup.apply(this)}></div>
                     </div>;
         }
     });
