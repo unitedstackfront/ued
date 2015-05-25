@@ -20,9 +20,6 @@ requests](#pull-requests), but please respect the following restrictions:
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
 
-```javascript
-var a = 0;
-```
 
 <a name="bugs"></a>
 ## Bug reports
