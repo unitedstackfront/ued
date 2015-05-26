@@ -18,7 +18,7 @@ define(['react', 'marked', 'highlight'], function(React, marked, highlight) {
         render: function() {
             function createMarkup() {
                 return {
-                    __html: marked(this.props.data.content.replace(/\<(.*?)\>/g, ''))
+                    __html: marked(this.props.data.content)
                 };
             };
             return <div className="post">
