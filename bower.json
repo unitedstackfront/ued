@@ -8,6 +8,7 @@
     "requirejs-text": "^2.0.0",
     "normalize-css": "3.x.x",
     "jsx-requirejs-plugin": "^0.6.0",
+    "marked": "*",
     "router": "https://github.com/flatiron/director.git"
   },
   "devDependencies": {

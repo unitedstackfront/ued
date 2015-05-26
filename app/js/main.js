@@ -12,7 +12,9 @@ requirejs.config({
     "JSXTransformer": "react/JSXTransformer",
     "text": "requirejs-text/text",
     "jsx": "jsx-requirejs-plugin/js/jsx",
-    "director": "router/build/director.min"
+    "director": "router/build/director.min",
+    "marked": "marked/marked.min",
+    "highlight": "highlight.js/highlight.pack"
   },
   jsx: {
     "fileExtension": ".jsx",
@@ -22,6 +24,9 @@ requirejs.config({
   shim: {
     "director": {
       "exports": "Router"
+    },
+    "highlight": {
+      "exports": "hljs"
     }
   }
 });
