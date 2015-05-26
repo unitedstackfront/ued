@@ -17,7 +17,9 @@ requirejs.config({
     "react": "react/react-with-addons.min",
     "JSXTransformer": "react/JSXTransformer",
     "text": "requirejs-text/text",
-    "jsx": "jsx-requirejs-plugin/js/jsx"
+    "jsx": "jsx-requirejs-plugin/js/jsx",
+    "marked": "marked/marked.min",
+    "highlight": "highlight.js/highlight.pack"
   },
   jsx: {
     "fileExtension": ".jsx",
