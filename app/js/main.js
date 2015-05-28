@@ -12,7 +12,7 @@ requirejs.config({
     "JSXTransformer": "react/JSXTransformer",
     "text": "requirejs-text/text",
     "jsx": "jsx-requirejs-plugin/js/jsx",
-    "director": "router/build/director.min",
+    "director": "router/build/director",
     "marked": "marked/marked.min",
     "highlight": "highlight.js/highlight.pack"
   },
