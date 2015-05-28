@@ -19,7 +19,7 @@ define([
             this.routers = {
                 '/post/:id': this.gotoPost.bind(this),
                 '/posts': this.gotoPosts.bind(this),
-                '/': this.gotoPosts.bind(this)
+                '(.*)': this.gotoPosts.bind(this)
             };
 
             this.router = Router(this.routers);

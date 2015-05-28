@@ -1,5 +1,4 @@
 define(['react', 'marked', 'highlight'], function(React, marked, highlight) {
-    console.log(highlight);
     marked.setOptions({
         renderer: new marked.Renderer(),
         gfm: true,
