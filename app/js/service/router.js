@@ -17,15 +17,16 @@ define([
 
         this.after('initialize', function() {
             this.routers = {
-                '!/post/:id': this.gotoPost.bind(this),
-                '!/posts': this.gotoPosts.bind(this)
+                '/post/:id': this.gotoPost.bind(this),
+                '/posts': this.gotoPosts.bind(this)
             };
 
             this.router = Router(this.routers);
 
             this.router.init();
+            this.router.setKeyHash('!');
             if (location.pathname == '/' && location.hash == '') {
-                this.router.setRoute('!/posts');
+                this.router.setRoute('/posts');
             }
 
         });
